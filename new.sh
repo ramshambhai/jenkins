@@ -1,2 +1,3 @@
 #! /bin/bash
-sudo yum install httpd -y
+sudo docker build -t myimg .
+sudo docker run -itd --name kalu myimg /bin/bash
